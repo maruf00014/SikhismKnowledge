@@ -1,5 +1,6 @@
 package com.sikhismknowledge.sikhismknowledge;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -12,10 +13,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-
+    ImageView quizImage,templeImage,historyImage,faqImage;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +33,48 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        quizImage = findViewById(R.id.quiz_image);
+        quizImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(
+                        MainActivity.this, QuizActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+        historyImage = findViewById(R.id.history_image);
+        historyImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(
+                        MainActivity.this, SikhHistory.class);
+                startActivity(intent);
+            }
+        });
+
+
+       templeImage = findViewById(R.id.temple_image);
+        templeImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(
+                        MainActivity.this, GoldenTemple.class);
+                startActivity(intent);
+            }
+        });
+
+        faqImage = findViewById(R.id.ask_image);
+        faqImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(
+                        MainActivity.this, AskQuestion.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override

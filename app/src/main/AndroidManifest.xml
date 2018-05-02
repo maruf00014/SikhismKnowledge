@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.sikhismknowledge.sikhismknowledge">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -12,13 +16,40 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".WelcomeScreen"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
+
+                <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
+        <activity android:name=".SikhHistory"
+            android:label="Sikh History"/>
+
+        <activity android:name=".GoldenTemple"
+            android:label="Golden Temple"/>
+
+        <activity android:name=".Gurbani"
+            android:label="Gurbani"/>
+
+        <activity android:name=".ShabadGurbani"
+            android:label="Shabad Gurbani"/>
+
+        <activity android:name=".AskQuestion"
+            android:label="FAQ"/>
+
+        <activity android:name=".Gallery" android:label="Gallery"/>
+
+        <activity android:name=".WebsitePosts" android:label="Website Posts"/>
+
+        <activity android:name=".ResultActivity" android:label="Quiz Result"/>
+
+        <activity android:name=".QuizActivity" android:label="Quiz"/>
+
+        <activity android:name=".News" android:label="News"/>
     </application>
 
 </manifest>
