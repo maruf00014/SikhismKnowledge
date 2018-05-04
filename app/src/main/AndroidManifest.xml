@@ -41,13 +41,16 @@
         <activity android:name=".AskQuestion"
             android:label="FAQ"/>
 
-        <activity android:name=".Gallery" android:label="Gallery"/>
+        <activity android:name=".Gallery" android:label="Gallery"
+            android:screenOrientation="portrait"/>
 
         <activity android:name=".WebsitePosts" android:label="Website Posts"/>
 
-        <activity android:name=".ResultActivity" android:label="Quiz Result"/>
+        <activity android:name=".ResultActivity" android:label="Quiz Result"
+            android:screenOrientation="portrait"/>
 
-        <activity android:name=".QuizActivity" android:label="Quiz"/>
+        <activity android:name=".QuizActivity" android:label="Quiz"
+            android:screenOrientation="portrait"/>
 
         <activity android:name=".News" android:label="News"/>
     </application>

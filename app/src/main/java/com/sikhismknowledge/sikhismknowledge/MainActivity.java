@@ -17,7 +17,7 @@ import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-    ImageView quizImage,templeImage,historyImage,faqImage;
+    ImageView quizImage,templeImage,historyImage,faqImage,galleryImage;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -72,6 +72,16 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View view) {
                 Intent intent = new Intent(
                         MainActivity.this, AskQuestion.class);
+                startActivity(intent);
+            }
+        });
+
+        galleryImage = findViewById(R.id.gallery_image);
+        galleryImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(
+                        MainActivity.this, Gallery.class);
                 startActivity(intent);
             }
         });

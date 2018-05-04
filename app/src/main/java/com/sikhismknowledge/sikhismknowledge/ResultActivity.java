@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
@@ -25,7 +27,17 @@ public class ResultActivity extends AppCompatActivity {
         int score= b.getInt("score");
         //display score
         bar.setRating(score);
-        t.setText(+score +" Write answers!");
+        t.setText(+score +" Correct answers!");
+
+        Button okButton = findViewById(R.id.ok_button);
+
+        okButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ResultActivity.this,MainActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
     /*
@@ -36,7 +48,7 @@ public class ResultActivity extends AppCompatActivity {
         return true;
     }
 */
-    @Override
+    /*@Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         if (id == R.id.action_settings) {
@@ -45,6 +57,6 @@ public class ResultActivity extends AppCompatActivity {
             return true;
         }
         return super.onOptionsItemSelected(item);
-    }
+    }*/
 
 }

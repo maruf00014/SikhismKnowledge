@@ -43,15 +43,15 @@ public class DbHelper extends SQLiteOpenHelper {
     }
     private void addQuestions()
     {
-        Question q1=new Question("If permissions are missing the application will get this at runtime","Parser", "SQLiteOpenHelper ", "Security Exception", "Security Exception");
+        Question q1=new Question("Where is the original copy of Sri Guru Granth Sahib Ji placed?","At Kartarpur", "Mumbai", "Chennai", "At Kartarpur");
         this.addQuestion(q1);
-        Question q2=new Question("An open source standalone database", "SQLite", "BackupHelper", "NetworkInfo", "SQLite");
+        Question q2=new Question("When was the first compilation of Sri Guru Granth Sahib Ji installed in Harmandir Sahib?", "1704 A.D.", "1604 A.D.", "1504 A.D.", "1604 A.D.");
         this.addQuestion(q2);
-        Question q3=new Question("Sharing of data in Android is done via?","Wi-Fi radio", "Service Content Provider","Ducking", "Service Content Provider" );
+        Question q3=new Question("How much of his income must every Sikh contribute for religious purposes?","One-Tenth", "One-Fifth","One-Third", "One-Tenth" );
         this.addQuestion(q3);
-        Question q4=new Question("Main class through which your application can access location services on Android", "LocationManager", "AttributeSet", "SQLiteOpenHelper","LocationManager");
+        Question q4=new Question("How many 'Lawans' are recited during the Sikh marriage?", "Five", "Three", "Four","Four");
         this.addQuestion(q4);
-        Question q5=new Question("Android is?","NetworkInfo","GooglePlay","Linux Based","Linux Based");
+        Question q5=new Question("Is the Nanakshahi Calendar a Solar or Lunar calendar?","Solar Calendar","Lunar calendar","Both","Solar Calendar");
         this.addQuestion(q5);
     }
     @Override
