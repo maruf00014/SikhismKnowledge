@@ -6,6 +6,8 @@
 
     <string name="action_settings">Settings</string>
 
+    <!--Sik History Start-->
+
     <string name="golden_temple_string">Sri Harmandir Sahib or Golden Temple, (on account of its scenic beauty and golden coating for English speaking world), is named after Hari(God) the temple of God. The Sikhs all over the world, daily wish to pay visit to Sri Amritsar and to pay obeisance at Sri Harmandir Sahib in their Ardas.
     \n\n"SIKHAN NOO SIKHI DAN, KES DAN, REHAT DAN, BIBEK DAN, BHAROSA DAN, DANAN SIR DAN NAAM DAN, SRI AMRITSAR JI DE DARSHAN ISHNAN"
     \n\nIt is our request, Waheguru Ji, that Sikhs should have your grace to keep ‘Sikhi’, the hair(Kes), all the ‘Rehats’ (the commandments given by Guru Gobind Singh Ji), high intelligence, trustworthiness, and above all the supreme gift of remembering Your Name; they may be given the pleasure of visiting Amritsar.
@@ -273,5 +275,13 @@ However, in some smaller Gurdwaras, men and women may be seen sitting mixed in t
 \n\nThe Sikh scripture, the Guru Granth Sahib, is the only major religious text which contains writings by teachers of other faiths. This is because Sikh gurus taught that there are many different ways of achieving a connection with the God. The Sikh way is one of these ways. If you are following the Sikh way, you must follow it to the best of your abilities, and with absolute devotion.
 
 \n\nDOES SIKHISM TRY TO CONVERT OTHERS?
-\n\nNo. Sikhism forbids proselytization or forced conversions. Sikhism believes that there are many paths to achieving attunement with the Divine. However, Sikhism welcomes those interested in learning about the religion. Thus, people might learn about Sikh faith and then even be initiated as Sikhs. There are Chinese Sikhs, African Sikhs etc. However, once someone is initiated as a Sikh, she or he must follow the Sikh path to the best of her or his ability.</string>
+\n\nNo. Sikhism forbids proselytization or forced conversions. Sikhism believes that there are many paths to achieving attunement with the Divine. However, Sikhism welcomes those interested in learning about the religion. Thus, people might learn about Sikh faith and then even be initiated as Sikhs. There are Chinese Sikhs, African Sikhs etc. However, once someone is initiated as a Sikh, she or he must follow the Sikh path to the best of her or his ability.
+    </string>
+
+    <!--Sik History End-->
+
+    <!--Website post start-->
+
+    <string name="A_power"> </string>
+
 </resources>

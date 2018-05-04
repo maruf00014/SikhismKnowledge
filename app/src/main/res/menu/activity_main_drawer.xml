@@ -5,34 +5,43 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:id="@+id/sikMenu"
+            android:icon="@drawable/history_icon"
+            android:title="Sikh History" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
+            android:id="@+id/goldenMenu"
+            android:icon="@drawable/temple_icon"
+            android:title="Golden Temple" />
+        <item
+            android:id="@+id/gurbaniMenu"
+            android:icon="@drawable/gurbani_icon"
+            android:title="Gurbani" />
+        <item
+            android:id="@+id/shabadMenu"
+            android:icon="@drawable/shabad_gurbani_icon"
+            android:title="Shabad Gurbani" />
+
+        <item
+            android:id="@+id/fagMenu"
+            android:icon="@drawable/ask_icon"
+            android:title="FAQ" />
+        <item
+            android:id="@+id/galleryMenu"
+            android:icon="@drawable/gallery_icon"
             android:title="Gallery" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
+            android:id="@+id/websiteMenu"
+            android:icon="@drawable/website_icon"
+            android:title="Website Posts" />
         <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
-    </group>
+            android:id="@+id/quizMenu"
+            android:icon="@drawable/quiz_icon"
+            android:title="Sikhism Quiz" />
 
-    <item android:title="Communicate">
-        <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
-        </menu>
-    </item>
+        <item
+            android:id="@+id/newsMenu"
+            android:icon="@drawable/news_icon"
+            android:title="News" />
+    </group>
 
 </menu>

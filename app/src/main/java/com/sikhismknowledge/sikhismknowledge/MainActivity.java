@@ -17,7 +17,8 @@ import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-    ImageView quizImage,templeImage,historyImage,faqImage,galleryImage;
+    ImageView quizImage,templeImage,historyImage,faqImage,galleryImage,
+            shabadGurbani,websitePosts,newsImage,gurbaniImage;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -85,6 +86,46 @@ public class MainActivity extends AppCompatActivity
                 startActivity(intent);
             }
         });
+
+        shabadGurbani = findViewById(R.id.shabad_image);
+        shabadGurbani.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(
+                        MainActivity.this, ShabadGurbani.class);
+                startActivity(intent);
+            }
+        });
+
+       websitePosts = findViewById(R.id.website_image);
+        websitePosts.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(
+                        MainActivity.this, WebsitePosts.class);
+                startActivity(intent);
+            }
+        });
+
+        newsImage = findViewById(R.id.news_image);
+        newsImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(
+                        MainActivity.this, News.class);
+                startActivity(intent);
+            }
+        });
+
+        gurbaniImage = findViewById(R.id.gurbani_image);
+        gurbaniImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(
+                        MainActivity.this, Gurbani.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -112,8 +153,11 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        if (id == R.id.aboutThisApp) {
+            Intent intent = new Intent(
+                    MainActivity.this, AboutThisApp.class);
+            startActivity(intent);
+
         }
 
         return super.onOptionsItemSelected(item);
@@ -125,17 +169,50 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.sikMenu) {
+            Intent intent = new Intent(
+                    MainActivity.this, SikhHistory.class);
+            startActivity(intent);
             // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.goldenMenu) {
+            Intent intent = new Intent(
+                    MainActivity.this, GoldenTemple.class);
+            startActivity(intent);
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.gurbaniMenu) {
+            Intent intent = new Intent(
+                    MainActivity.this, Gurbani.class);
+            startActivity(intent);
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.shabadMenu) {
+            Intent intent = new Intent(
+                    MainActivity.this, ShabadGurbani.class);
+            startActivity(intent);
 
-        } else if (id == R.id.nav_share) {
+        } else if (id == R.id.fagMenu) {
+            Intent intent = new Intent(
+                    MainActivity.this, AskQuestion.class);
+            startActivity(intent);
 
-        } else if (id == R.id.nav_send) {
+        }else if (id == R.id.galleryMenu) {
+            Intent intent = new Intent(
+                    MainActivity.this, Gallery.class);
+            startActivity(intent);
+
+        }else if (id == R.id.websiteMenu) {
+            Intent intent = new Intent(
+                    MainActivity.this, WebsitePosts.class);
+            startActivity(intent);
+
+        }else if (id == R.id.quizMenu) {
+            Intent intent = new Intent(
+                    MainActivity.this, QuizActivity.class);
+            startActivity(intent);
+
+        }else if (id == R.id.newsMenu) {
+            Intent intent = new Intent(
+                    MainActivity.this, News.class);
+            startActivity(intent);
 
         }
 
