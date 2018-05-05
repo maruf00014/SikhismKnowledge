@@ -13,6 +13,63 @@
     android:layout_margin="8dp"
     android:orientation="vertical">
 
+
+    <Button
+        android:id="@+id/MeriPatia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Meri Patia Likh Deho Siri Gopal"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        />
+
+    <Button
+        android:id="@+id/NaamBina"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Naam Bina Nahi Jeeveya Jaye"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        />
+
+    <Button
+        android:id="@+id/KirpaKaro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Kirpa Karo Hare"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        />
+
+    <Button
+        android:id="@+id/HarJioNimanya"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Har Jio Nimanya Tu Maan"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        />
+
+
+    <Button
+        android:id="@+id/KarKirpa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Kar Kirpa Tere Gun Gaava"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        />
+
     <Button
         android:id="@+id/satnam"
         android:layout_width="match_parent"

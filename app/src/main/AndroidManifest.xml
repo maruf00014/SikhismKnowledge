@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
 
     <application
         android:allowBackup="true"
@@ -19,8 +20,8 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".WelcomeScreen"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
 
@@ -30,23 +31,23 @@
         <activity
             android:name=".SikhHistory"
             android:label="Sikh History"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".GoldenTemple"
             android:label="Golden Temple"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Gurbani"
             android:label="Gurbani"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ShabadGurbani"
             android:label="Shabad Gurbani"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".AskQuestion"
             android:label="FAQ"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Gallery"
             android:label="Gallery"
@@ -54,7 +55,7 @@
         <activity
             android:name=".WebsitePosts"
             android:label="Website Posts"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ResultActivity"
             android:label="Quiz Result"
@@ -66,12 +67,19 @@
         <activity
             android:name=".News"
             android:label="News" />
-
-
-        <activity android:name=".AboutThisApp"
+        <activity
+            android:name=".AboutThisApp"
             android:label="About"
-            android:screenOrientation="portrait"/>
-
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SikGurus"
+            android:label="Sik Gurus" />
+        <activity android:name=".Piare" android:label="5 Piare"/>
+        <activity android:name=".WaddeSahibzaade" android:label="Wadde Sahibzaade"/>
+        <activity android:name=".ChhoteSahibzaade" android:label="Chhote Sahibzaade"/>
+        <activity android:name=".SikhismGlossary" android:label="Sikhism Glossary"/>
+        <activity android:name=".SikhRehetMaryada" android:label="Sikh Rehet Maryada"/>
+        <activity android:name=".Other" android:label="Other"></activity>
     </application>
 
 </manifest>

@@ -8,11 +8,72 @@ import android.view.View;
 import android.widget.Button;
 
 public class ShabadGurbani extends AppCompatActivity {
-    Button satnam,kab,har,jhiva,tumere,tum,taati,tumwith,jogia,bahut;
+    Button satnam,kab,har,jhiva,tumere,tum,taati,tumwith,jogia,bahut,
+    meriPatia,naamBina,kirpa,harJio,karKirpa;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shabad_gurbani);
+        meriPatia = findViewById(R.id.MeriPatia);
+        meriPatia.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Uri uri = Uri.parse("http://sikhismknowledge.com/shabad_gurbani/meri_patia.mp3");
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+
+
+            }
+        });
+
+       naamBina = findViewById(R.id.NaamBina);
+       naamBina.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Uri uri = Uri.parse("http://sikhismknowledge.com/shabad_gurbani/naam_bina.mp3");
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+
+
+            }
+        });
+
+        kirpa = findViewById(R.id.KirpaKaro);
+        kirpa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Uri uri = Uri.parse("http://sikhismknowledge.com/shabad_gurbani/kirpaa_karo_hare.mp3");
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+
+
+            }
+        });
+
+        harJio = findViewById(R.id.HarJioNimanya);
+        harJio.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Uri uri = Uri.parse("http://www.sikhismknowledge.com/shabad_gurbani/Har_Jio_Bhai_Davinder_Singh.mp3");
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+
+
+            }
+        });
+
+        karKirpa = findViewById(R.id.KarKirpa);
+        karKirpa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Uri uri = Uri.parse("http://sikhismknowledge.com/shabad_gurbani/Kar_Kirpa_Tere_Gun_Gaavan_Bhai_Satinderbir_Singh.mp3");
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+
+
+            }
+        });
+
 
         satnam = findViewById(R.id.satnam);
         satnam.setOnClickListener(new View.OnClickListener() {
