@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "774550303062",
+    "firebase_url": "https://sikhismknowledge-c200b.firebaseio.com",
+    "project_id": "sikhismknowledge-c200b",
+    "storage_bucket": "sikhismknowledge-c200b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:774550303062:android:f06e56e9b4f283ab",
+        "android_client_info": {
+          "package_name": "com.sikhismknowledge.sikhismknowledge"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "774550303062-iha8rdqp5tl1f0jvgj51okus00orkg6v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXbGO8xkA7lyUjrgeL51K1r2vXz1CC-1w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
