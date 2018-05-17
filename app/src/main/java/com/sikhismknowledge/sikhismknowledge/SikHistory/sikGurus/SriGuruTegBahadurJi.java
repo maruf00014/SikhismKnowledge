@@ -1,10 +1,10 @@
-package com.sikhismknowledge.sikhismknowledge;
+package com.sikhismknowledge.sikhismknowledge.SikHistory.sikGurus;
 
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.KeyEvent;
 import android.view.View;
 import android.webkit.WebChromeClient;
@@ -13,15 +13,19 @@ import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-public class WebsitePosts extends AppCompatActivity {
+import com.sikhismknowledge.sikhismknowledge.R;
+
+/**
+ * Created by Maruf on 17-May-18.
+ */
+
+public class SriGuruTegBahadurJi extends AppCompatActivity {
     private WebView webview;
     private ProgressBar progressBar;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.web_view);
-
 
         if(isNetworkStatusAvialable (getApplicationContext())) {
 
@@ -50,7 +54,7 @@ public class WebsitePosts extends AppCompatActivity {
                 }
             }
         });
-        webview.loadUrl("http://www.sikhismknowledge.com/category/featured/");
+        webview.loadUrl("http://www.sikhismknowledge.com/sikhism/sri-guru-teg-bahadur-ji/");
 
     }
 
@@ -85,3 +89,4 @@ public class WebsitePosts extends AppCompatActivity {
 
 
 }
+

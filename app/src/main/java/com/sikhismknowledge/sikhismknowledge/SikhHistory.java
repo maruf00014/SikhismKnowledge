@@ -5,10 +5,21 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
+
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+import com.sikhismknowledge.sikhismknowledge.SikHistory.Other;
+import com.sikhismknowledge.sikhismknowledge.SikHistory.SikGurus;
+
 
 public class SikhHistory extends AppCompatActivity {
 
-    Button SikhGurus,Piare,WaddeSahibzaade,ChhoteSahibzaade,SikhismGlossary,SikhRehetMaryada,
+
+
+    Button SikhGurus,Piare,WaddeSahibzaade,ChhoteSahibzaade,SikhismGlossary,
             other;
 
     @Override
@@ -16,11 +27,13 @@ public class SikhHistory extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sikh_history);
 
+
+
         SikhGurus = findViewById(R.id.SikhGurus);
         SikhGurus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(SikhHistory.this,SikGurus.class);
+                Intent intent = new Intent(SikhHistory.this,com.sikhismknowledge.sikhismknowledge.SikHistory.SikGurus.class);
                 startActivity(intent);
             }
         });
@@ -29,7 +42,7 @@ public class SikhHistory extends AppCompatActivity {
         Piare.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(SikhHistory.this,Piare.class);
+                Intent intent = new Intent(SikhHistory.this, com.sikhismknowledge.sikhismknowledge.SikHistory.Piare.class);
                 startActivity(intent);
             }
         });
@@ -38,7 +51,7 @@ public class SikhHistory extends AppCompatActivity {
         WaddeSahibzaade.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(SikhHistory.this,WaddeSahibzaade.class);
+                Intent intent = new Intent(SikhHistory.this, com.sikhismknowledge.sikhismknowledge.SikHistory.WaddeSahibzaade.class);
                 startActivity(intent);
             }
         });
@@ -47,7 +60,7 @@ public class SikhHistory extends AppCompatActivity {
         ChhoteSahibzaade.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(SikhHistory.this,ChhoteSahibzaade.class);
+                Intent intent = new Intent(SikhHistory.this, com.sikhismknowledge.sikhismknowledge.SikHistory.ChhoteSahibzaade.class);
                 startActivity(intent);
             }
         });
@@ -56,7 +69,7 @@ public class SikhHistory extends AppCompatActivity {
         SikhismGlossary.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(SikhHistory.this,SikhismGlossary.class);
+                Intent intent = new Intent(SikhHistory.this, com.sikhismknowledge.sikhismknowledge.SikHistory.SikhismGlossary.class);
                 startActivity(intent);
             }
         });

@@ -19,7 +19,7 @@ public class News extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_news);
+        setContentView(R.layout.web_view);
 
         if(isNetworkStatusAvialable (getApplicationContext())) {
 
@@ -29,9 +29,9 @@ public class News extends AppCompatActivity {
 
         }
 
-        progressBar = findViewById(R.id.news_progressBar);
+        progressBar = findViewById(R.id.progressBar);
 
-        webview = findViewById(R.id.news_webView);
+        webview = findViewById(R.id.webView);
         webview.getSettings().setJavaScriptEnabled(true);
         webview.getSettings().setLoadsImagesAutomatically(true);
         webview.setWebViewClient(new WebViewClient());

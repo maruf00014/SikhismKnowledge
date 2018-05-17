@@ -1,7 +1,9 @@
-package com.sikhismknowledge.sikhismknowledge;
+package com.sikhismknowledge.sikhismknowledge.SikHistory;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.sikhismknowledge.sikhismknowledge.R;
 
 public class SikhismGlossary extends AppCompatActivity {
 

@@ -71,30 +71,57 @@
             android:name=".AboutThisApp"
             android:label="About"
             android:screenOrientation="portrait" />
+
         <activity
-            android:name=".SikGurus"
+            android:name=".SikHistory.SikGurus"
             android:label="Sik Gurus" />
-        <activity android:name=".Piare" android:label="5 Piare"/>
-        <activity android:name=".WaddeSahibzaade" android:label="Wadde Sahibzaade"/>
-        <activity android:name=".ChhoteSahibzaade" android:label="Chhote Sahibzaade"/>
-        <activity android:name=".SikhismGlossary" android:label="Sikhism Glossary"/>
-        <activity android:name=".SikhRehetMaryada" android:label="Sikh Rehet Maryada"/>
-        <activity android:name=".Other" android:label="Other"/>
+        <activity
+            android:name=".SikHistory.Piare"
+            android:label="5 Piare" />
+        <activity
+            android:name=".SikHistory.WaddeSahibzaade"
+            android:label="Wadde Sahibzaade" />
+        <activity
+            android:name=".SikHistory.ChhoteSahibzaade"
+            android:label="Chhote Sahibzaade" />
+        <activity
+            android:name=".SikHistory.SikhismGlossary"
+            android:label="Sikhism Glossary" />
+        <activity
+            android:name=".SikHistory.Other"
+            android:label="Other" />
 
         <service android:name=".MyFirebaseInstanceIdService">
-            <intent-filter >
-                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
-            </intent-filter>
-
-        </service>
-
-        <service android:name=".MyFirebaseMessagingService">
-
             <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
 
+        <activity android:name=".gurbani.JapjiSahibPunjabi"  android:label="Japji Sahib"/>
+        <activity android:name=".gurbani.ShabadHazaarePunjabi"  android:label="Shabad Hazaare"/>
+        <activity android:name=".gurbani.JaapSahibPunjabi" android:label="Jaap Sahib " />
+        <activity android:name=".gurbani.TavParsaadSavaiyeePunjabi"  android:label="Tav Parsaad Savaiyee "/>
+        <activity android:name=".gurbani.AnandSahibPunjabi"  android:label="Anand Sahib"/>
+        <activity android:name=".gurbani.RehraasSahibPunjabi"  android:label="Rehraas Sahib"/>
+        <activity android:name=".gurbani.KirtanSohilaPunjabi"  android:label="Kirtan Sohila"/>
+        <activity android:name=".gurbani.BarahmaahaPunjabi"  android:label="Barahmaaha"/>
+
+
+        <activity android:name=".SikHistory.sikGurus.SriGuruAmardasJi" android:label="Sri Guru Amardas Ji"/>
+        <activity android:name=".SikHistory.sikGurus.SriGuruAngadDevJi" android:label="Sri Guru Angad Dev Ji"/>
+        <activity android:name=".SikHistory.sikGurus.SriGuruArjanDevJi" android:label="Sri Guru Arjan Dev Ji"/>
+        <activity android:name=".SikHistory.sikGurus.SriGuruGobindSinghJi" android:label="Sri Guru Gobind Singh Ji"/>
+        <activity android:name=".SikHistory.sikGurus.SriGuruHargobindSahibJi" android:label="Sri Guru Hargobind Sahib Ji"/>
+        <activity android:name=".SikHistory.sikGurus.SriGuruHarkrishanJi" android:label="Sri Guru Har krishan Ji"/>
+        <activity android:name=".SikHistory.sikGurus.SriGuruHarRaiJi" android:label="Sr iGuru Har Rai Ji"/>
+        <activity android:name=".SikHistory.sikGurus.SriGuruNanakDevJi" android:label="Sri Guru Nanak Dev Ji"/>
+        <activity android:name=".SikHistory.sikGurus.SriGuruRamDaasJi" android:label="Sri Guru Ram Daas Ji"/>
+        <activity android:name=".SikHistory.sikGurus.SriGuruTegBahadurJi" android:label="Sri Guru Teg Bahadur Ji"/>
     </application>
 
 </manifest>
