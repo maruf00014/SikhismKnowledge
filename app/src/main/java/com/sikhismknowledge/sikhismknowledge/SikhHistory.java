@@ -19,8 +19,7 @@ public class SikhHistory extends AppCompatActivity {
 
 
 
-    Button SikhGurus,Piare,WaddeSahibzaade,ChhoteSahibzaade,SikhismGlossary,
-            other;
+    Button SikhGurus,Piare,WaddeSahibzaade,ChhoteSahibzaade,SikhismGlossary;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,14 +75,7 @@ public class SikhHistory extends AppCompatActivity {
 
 
 
-        other = findViewById(R.id.other);
-        other.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(SikhHistory.this,Other.class);
-                startActivity(intent);
-            }
-        });
+
 
     }
 

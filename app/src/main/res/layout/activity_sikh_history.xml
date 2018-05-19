@@ -54,16 +54,6 @@
         android:text="Sikhism Glossary"
         android:layout_marginBottom="8dp"/>
 
-    <Button
-        android:id="@+id/other"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:textColor="@android:color/white"
-        android:background="@color/colorPrimary"
-        android:text="others"
-        android:layout_marginBottom="8dp"/>
-
 
 
 </LinearLayout>
