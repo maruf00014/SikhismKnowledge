@@ -1,35 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:ads="http://schemas.android.com/apk/res-auto"
-    tools:context="com.sikhismknowledge.sikhismknowledge.GoldenTemple">
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-<LinearLayout
-    android:id="@+id/goldenRetiveLayout"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    android:id="@+id/sikLinearLayout">
 
-    <ImageView
+    <Button
+        android:id="@+id/ArtandArchitecture"
         android:layout_width="match_parent"
-        android:layout_height="230dp"
-        android:src="@drawable/golden_temple"/>
-    <TextView
-        android:layout_margin="8dp"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="64dp"
-        android:text="@string/golden_temple_string"/>
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:text="Art and Architecture"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/Maryada"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:text="Maryada"
+        android:layout_marginBottom="8dp"/>
+    <Button
+        android:id="@+id/Jalau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:text="Jalau"
+        android:layout_marginBottom="8dp"/>
+    <Button
+        android:id="@+id/MaharajaRanjitSingh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:text="Maharaja Ranjit Singh"
+        android:layout_marginBottom="8dp"/>
+    <Button
+        android:id="@+id/AkalTakhtSahib"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:text="Akal Takht Sahib"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/BerBabaBuddhaJi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:text="Ber Baba Buddha Ji"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/Kaulsar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:text="Kaulsar"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/DukhbhanjaniBeri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:text="Dukhbhanjani Beri"
+        android:layout_marginBottom="8dp"/>
+
 
 
 </LinearLayout>
-
-    </ScrollView>
-    <include
-        layout="@layout/ad_view" />
-</RelativeLayout>

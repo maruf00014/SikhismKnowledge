@@ -111,6 +111,14 @@
         <activity android:name=".gurbani.KirtanSohilaPunjabi"  android:label="Kirtan Sohila"/>
         <activity android:name=".gurbani.BarahmaahaPunjabi"  android:label="Barahmaaha"/>
 
+        <activity android:name=".goldenTemple.AkalTakhtSahib"  android:label="Akal Takht Sahib"/>
+        <activity android:name=".goldenTemple.ArtandArchitecture"  android:label="Art and Architecture"/>
+        <activity android:name=".goldenTemple.BerBabaBuddhaJi"  android:label="Ber Baba Buddha Ji"/>
+        <activity android:name=".goldenTemple.DukhbhanjaniBeri"  android:label="Dukhbhanjani Beri"/>
+        <activity android:name=".goldenTemple.Jalau"  android:label="Jalau"/>
+        <activity android:name=".goldenTemple.Kaulsar"  android:label="Kaulsar"/>
+        <activity android:name=".goldenTemple.MaharajaRanjitSingh"  android:label="Maharaja Ranjit Singh"/>
+        <activity android:name=".goldenTemple.Maryada"  android:label="Maryada"/>
 
         <activity android:name=".SikHistory.sikGurus.SriGuruAmardasJi" android:label="Sri Guru Amardas Ji"/>
         <activity android:name=".SikHistory.sikGurus.SriGuruAngadDevJi" android:label="Sri Guru Angad Dev Ji"/>
