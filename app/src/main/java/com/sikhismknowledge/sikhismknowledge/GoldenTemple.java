@@ -21,7 +21,7 @@ public class GoldenTemple extends AppCompatActivity {
         // adds
 
      MobileAds.initialize(this,getString(R.string.app_ad_id));
-        AdView adView = findViewById(R.id.goldenadView);
+        AdView adView = findViewById(R.id.webAdView);
         AdRequest adRequest = new AdRequest.Builder().build();
         adView.loadAd(adRequest);
 

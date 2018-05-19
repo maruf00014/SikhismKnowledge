@@ -13,6 +13,9 @@ import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 import com.sikhismknowledge.sikhismknowledge.R;
 
 /**
@@ -28,6 +31,10 @@ public class SriGuruAngadDevJi extends AppCompatActivity {
         setContentView(R.layout.web_view);
 
         if(isNetworkStatusAvialable (getApplicationContext())) {
+            MobileAds.initialize(this,getString(R.string.app_ad_id));
+            AdView adView = findViewById(R.id.webAdView);
+            AdRequest adRequest = new AdRequest.Builder().build();
+            adView.loadAd(adRequest);
 
         } else {
             Toast.makeText(getApplicationContext(), "No Internet Connection!", Toast.LENGTH_LONG).show();
