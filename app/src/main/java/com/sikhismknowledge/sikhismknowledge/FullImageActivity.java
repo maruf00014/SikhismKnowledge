@@ -11,6 +11,7 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -27,6 +28,8 @@ public class FullImageActivity extends AppCompatActivity  implements NavigationV
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_full_image);
 
+        Toolbar gallerytoolbar = (Toolbar) findViewById(R.id.galleryToolbar);
+        setSupportActionBar(gallerytoolbar);
 
 
         Intent i =getIntent();

@@ -40,16 +40,13 @@ public class AskQuestion extends AppCompatActivity {
         String subject = mEditTextSubject.getText().toString();
         String message = mEditTextMessage.getText().toString();
 
-        Intent sendIntent = new Intent(Intent.ACTION_VIEW);
-        sendIntent.setType("plain/text");
-        sendIntent.setData(Uri.parse("admin@sikhismknowledge.com"));
-        sendIntent.setClassName("com.google.android.gm",
-                "com.google.android.gm.ComposeActivityGmail");
-        sendIntent.putExtra(Intent.EXTRA_EMAIL, new String[] { "admin@sikhismknowledge.com" });
+        Intent sendIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
+                "mailto","admin@sikhismknowledge.com", null));
+
         sendIntent.putExtra(Intent.EXTRA_SUBJECT, subject);
         sendIntent.putExtra(Intent.EXTRA_TEXT,
                 message);
-        startActivity(sendIntent);
+        startActivity(Intent.createChooser(sendIntent, "Send By"));
     }
 }
 

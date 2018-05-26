@@ -1,11 +1,13 @@
 package com.sikhismknowledge.sikhismknowledge;
 
 import android.content.Context;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 /**
  * Created by Maruf on 20-May-18.
@@ -24,7 +26,8 @@ public class ImageAdapter extends BaseAdapter {
             R.drawable.img16,R.drawable.img17,R.drawable.img18,
             R.drawable.img19,R.drawable.img20,R.drawable.img21,
             R.drawable.img22,R.drawable.img23,R.drawable.img24,
-            R.drawable.img25, R.drawable.img26, R.drawable.img27
+            R.drawable.img25, R.drawable.img26, R.drawable.img27,
+            R.drawable.img28
 
     };
 
@@ -49,12 +52,26 @@ public class ImageAdapter extends BaseAdapter {
         return 0;
     }
 
+
+
     @Override
-    public View getView(int i, View view, ViewGroup viewGroup) {
-        ImageView imageView = new ImageView(context);
-        imageView.setImageResource(images[i]);
-        imageView.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
-        imageView.setLayoutParams(new GridView.LayoutParams(215,215));
-        return imageView;
-    }
+    public View getView(int position, View convertView, ViewGroup parent) {
+        ImageView imageView;
+
+        if (convertView == null) {
+
+            imageView = new ImageView(context);
+            imageView.setImageResource(images[ position]);
+            imageView.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
+            imageView.setLayoutParams(new GridView.LayoutParams(320,320));
+
+        } else {
+            imageView = (ImageView) convertView;
+            imageView.setImageResource(images[ position]);
+        }
+
+        return imageView;  }
+
+
+
 }

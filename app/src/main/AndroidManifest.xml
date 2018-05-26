@@ -213,8 +213,8 @@
             android:label="Sri Guru Teg Bahadur Ji" />
         <activity
             android:name=".FullImageActivity"
-            android:label="Gallery" />
-        <activity android:name=".StreamActivity" android:label="Shabad Gurbani"></activity>
+            android:label="Gallery"  android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".StreamActivity" android:label="Shabad Gurbani"/>
     </application>
 
 </manifest>
