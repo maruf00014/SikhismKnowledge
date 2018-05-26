@@ -2,9 +2,6 @@ package com.sikhismknowledge.sikhismknowledge;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -15,14 +12,11 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
-import android.widget.Toast;
-
-import com.google.firebase.iid.FirebaseInstanceId;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     ImageView quizImage,templeImage,historyImage,faqImage,galleryImage,
-            shabadGurbani,websitePosts,newsImage,gurbaniImage;
+            shabadGurbani,websitePosts,supportImage,gurbaniImage;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -114,12 +108,12 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
-        newsImage = findViewById(R.id.news_image);
-        newsImage.setOnClickListener(new View.OnClickListener() {
+        supportImage = findViewById(R.id.support_image);
+        supportImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(
-                        MainActivity.this, News.class);
+                        MainActivity.this, Support.class);
                 startActivity(intent);
             }
         });
@@ -218,7 +212,7 @@ public class MainActivity extends AppCompatActivity
 
         }else if (id == R.id.newsMenu) {
             Intent intent = new Intent(
-                    MainActivity.this, News.class);
+                    MainActivity.this, Support.class);
             startActivity(intent);
 
         }

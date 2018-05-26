@@ -8,8 +8,10 @@
 
     <application
         android:allowBackup="true"
+        android:hardwareAccelerated="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -46,7 +48,7 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".AskQuestion"
-            android:label="FAQ"
+            android:label="Ask a Question"
             android:screenOrientation="portrait" />
         <activity
             android:name=".Gallery"
@@ -65,13 +67,12 @@
             android:label="Quiz"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".News"
-            android:label="News" />
+            android:name=".Support"
+            android:label="Support" />
         <activity
             android:name=".AboutThisApp"
             android:label="About"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".SikHistory.SikGurus"
             android:label="Sik Gurus" />
@@ -87,9 +88,6 @@
         <activity
             android:name=".SikHistory.SikhismGlossary"
             android:label="Sikhism Glossary" />
-        <activity
-            android:name=".SikHistory.Other"
-            android:label="Other" />
 
         <service android:name=".MyFirebaseInstanceIdService">
             <intent-filter>
@@ -102,34 +100,121 @@
             </intent-filter>
         </service>
 
-        <activity android:name=".gurbani.JapjiSahibPunjabi"  android:label="Japji Sahib"/>
-        <activity android:name=".gurbani.ShabadHazaarePunjabi"  android:label="Shabad Hazaare"/>
-        <activity android:name=".gurbani.JaapSahibPunjabi" android:label="Jaap Sahib " />
-        <activity android:name=".gurbani.TavParsaadSavaiyeePunjabi"  android:label="Tav Parsaad Savaiyee "/>
-        <activity android:name=".gurbani.AnandSahibPunjabi"  android:label="Anand Sahib"/>
-        <activity android:name=".gurbani.RehraasSahibPunjabi"  android:label="Rehraas Sahib"/>
-        <activity android:name=".gurbani.KirtanSohilaPunjabi"  android:label="Kirtan Sohila"/>
-        <activity android:name=".gurbani.BarahmaahaPunjabi"  android:label="Barahmaaha"/>
-
-        <activity android:name=".goldenTemple.AkalTakhtSahib"  android:label="Akal Takht Sahib"/>
-        <activity android:name=".goldenTemple.ArtandArchitecture"  android:label="Art and Architecture"/>
-        <activity android:name=".goldenTemple.BerBabaBuddhaJi"  android:label="Ber Baba Buddha Ji"/>
-        <activity android:name=".goldenTemple.DukhbhanjaniBeri"  android:label="Dukhbhanjani Beri"/>
-        <activity android:name=".goldenTemple.Jalau"  android:label="Jalau"/>
-        <activity android:name=".goldenTemple.Kaulsar"  android:label="Kaulsar"/>
-        <activity android:name=".goldenTemple.MaharajaRanjitSingh"  android:label="Maharaja Ranjit Singh"/>
-        <activity android:name=".goldenTemple.Maryada"  android:label="Maryada"/>
-
-        <activity android:name=".SikHistory.sikGurus.SriGuruAmardasJi" android:label="Sri Guru Amardas Ji"/>
-        <activity android:name=".SikHistory.sikGurus.SriGuruAngadDevJi" android:label="Sri Guru Angad Dev Ji"/>
-        <activity android:name=".SikHistory.sikGurus.SriGuruArjanDevJi" android:label="Sri Guru Arjan Dev Ji"/>
-        <activity android:name=".SikHistory.sikGurus.SriGuruGobindSinghJi" android:label="Sri Guru Gobind Singh Ji"/>
-        <activity android:name=".SikHistory.sikGurus.SriGuruHargobindSahibJi" android:label="Sri Guru Hargobind Sahib Ji"/>
-        <activity android:name=".SikHistory.sikGurus.SriGuruHarkrishanJi" android:label="Sri Guru Har krishan Ji"/>
-        <activity android:name=".SikHistory.sikGurus.SriGuruHarRaiJi" android:label="Sr iGuru Har Rai Ji"/>
-        <activity android:name=".SikHistory.sikGurus.SriGuruNanakDevJi" android:label="Sri Guru Nanak Dev Ji"/>
-        <activity android:name=".SikHistory.sikGurus.SriGuruRamDaasJi" android:label="Sri Guru Ram Daas Ji"/>
-        <activity android:name=".SikHistory.sikGurus.SriGuruTegBahadurJi" android:label="Sri Guru Teg Bahadur Ji"/>
+        <activity
+            android:name=".gurbani.JapjiSahibPunjabi"
+            android:label="Japji Sahib" />
+        <activity
+            android:name=".gurbani.ShabadHazaarePunjabi"
+            android:label="Shabad Hazaare" />
+        <activity
+            android:name=".gurbani.JaapSahibPunjabi"
+            android:label="Jaap Sahib " />
+        <activity
+            android:name=".gurbani.TavParsaadSavaiyeePunjabi"
+            android:label="Tav Parsaad Savaiyee " />
+        <activity
+            android:name=".gurbani.AnandSahibPunjabi"
+            android:label="Anand Sahib" />
+        <activity
+            android:name=".gurbani.RehraasSahibPunjabi"
+            android:label="Rehraas Sahib" />
+        <activity
+            android:name=".gurbani.KirtanSohilaPunjabi"
+            android:label="Kirtan Sohila" />
+        <activity
+            android:name=".gurbani.BarahmaahaPunjabi"
+            android:label="Barahmaaha" />
+        <activity
+            android:name=".gurbani.AnandSahibEnglish"
+            android:label="Anand Sahib" />
+        <activity
+            android:name=".gurbani.BarahmaahaEnglish"
+            android:label="Barahmaaha" />
+        <activity
+            android:name=".gurbani.JapjiSahibEnglish"
+            android:label="Japji Sahib" />
+        <activity
+            android:name=".gurbani.KirtanSohilaEnglish"
+            android:label="Kirtan" />
+        <activity
+            android:name=".gurbani.RehraasSahibEnglish"
+            android:label="Rehraas Sahib" />
+        <activity
+            android:name=".gurbani.TavPrasadSavaiyeMorning645AM"
+            android:label="Set Alarm" />
+        <activity
+            android:name=".gurbani.SohilaEvening10PM"
+            android:label="Set Alarm" />
+        <activity
+            android:name=".gurbani.JapjiSahibMorning6AM"
+            android:label="Set Alarm" />
+        <activity
+            android:name=".gurbani.RehraasSahibEvening630PM"
+            android:label="Set Alarm" />
+        <activity
+            android:name=".gurbani.JaapSahibMorning615AM"
+            android:label="Set Alarm" />
+        <activity
+            android:name=".gurbani.AnandSahibMorning7AM"
+            android:label="Set Alarm" />
+        <activity
+            android:name=".goldenTemple.AkalTakhtSahib"
+            android:label="Akal Takht Sahib" />
+        <activity
+            android:name=".goldenTemple.ArtandArchitecture"
+            android:label="Art and Architecture" />
+        <activity
+            android:name=".goldenTemple.BerBabaBuddhaJi"
+            android:label="Ber Baba Buddha Ji" />
+        <activity
+            android:name=".goldenTemple.DukhbhanjaniBeri"
+            android:label="Dukhbhanjani Beri" />
+        <activity
+            android:name=".goldenTemple.Jalau"
+            android:label="Jalau" />
+        <activity
+            android:name=".goldenTemple.Kaulsar"
+            android:label="Kaulsar" />
+        <activity
+            android:name=".goldenTemple.MaharajaRanjitSingh"
+            android:label="Maharaja Ranjit Singh" />
+        <activity
+            android:name=".goldenTemple.Maryada"
+            android:label="Maryada" />
+        <activity
+            android:name=".SikHistory.sikGurus.SriGuruAmardasJi"
+            android:label="Sri Guru Amardas Ji" />
+        <activity
+            android:name=".SikHistory.sikGurus.SriGuruAngadDevJi"
+            android:label="Sri Guru Angad Dev Ji" />
+        <activity
+            android:name=".SikHistory.sikGurus.SriGuruArjanDevJi"
+            android:label="Sri Guru Arjan Dev Ji" />
+        <activity
+            android:name=".SikHistory.sikGurus.SriGuruGobindSinghJi"
+            android:label="Sri Guru Gobind Singh Ji" />
+        <activity
+            android:name=".SikHistory.sikGurus.SriGuruHargobindSahibJi"
+            android:label="Sri Guru Hargobind Sahib Ji" />
+        <activity
+            android:name=".SikHistory.sikGurus.SriGuruHarkrishanJi"
+            android:label="Sri Guru Har krishan Ji" />
+        <activity
+            android:name=".SikHistory.sikGurus.SriGuruHarRaiJi"
+            android:label="Sr iGuru Har Rai Ji" />
+        <activity
+            android:name=".SikHistory.sikGurus.SriGuruNanakDevJi"
+            android:label="Sri Guru Nanak Dev Ji" />
+        <activity
+            android:name=".SikHistory.sikGurus.SriGuruRamDaasJi"
+            android:label="Sri Guru Ram Daas Ji" />
+        <activity
+            android:name=".SikHistory.sikGurus.SriGuruTegBahadurJi"
+            android:label="Sri Guru Teg Bahadur Ji" />
+        <activity
+            android:name=".FullImageActivity"
+            android:label="Gallery" />
+        <activity android:name=".StreamActivity" android:label="Shabad Gurbani"></activity>
     </application>
 
 </manifest>

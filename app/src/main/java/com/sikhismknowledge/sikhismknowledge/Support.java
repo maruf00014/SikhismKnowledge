@@ -13,7 +13,7 @@ import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-public class News extends AppCompatActivity {
+public class Support extends AppCompatActivity {
     private WebView webview;
     private ProgressBar progressBar;
     @Override
@@ -48,7 +48,7 @@ public class News extends AppCompatActivity {
                 }
             }
         });
-        webview.loadUrl("https://www.sikh24.com/");
+        webview.loadUrl("https://www.paypal.me/sikhismknowledge");
 
     }
 

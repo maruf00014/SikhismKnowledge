@@ -118,7 +118,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:text="FAQ"
+                android:text="Ask a Question"
                 android:textColor="@color/colorPrimary"
                 android:textStyle="bold"/>
         </LinearLayout>
@@ -197,15 +197,15 @@
             android:gravity="center"
             android:orientation="vertical">
             <ImageView
-                android:id="@+id/news_image"
+                android:id="@+id/support_image"
                 android:layout_width="65dp"
                 android:layout_height="65dp"
-                android:src="@drawable/news_icon"/>
+                android:src="@drawable/support_icon"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:text="News"
+                android:text="Support"
                 android:textColor="@color/colorPrimary"
                 android:textStyle="bold"/>
         </LinearLayout>

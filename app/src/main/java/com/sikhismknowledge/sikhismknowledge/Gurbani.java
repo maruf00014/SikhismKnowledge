@@ -8,23 +8,19 @@ import android.view.View;
 import android.widget.Button;
 
 public class Gurbani extends AppCompatActivity {
-    Button alarmButton,JapjiSahibPunjabi,ShabadHazaarePunjabi,JaapSahibPunjabi,TavParsaadSavaiyeePunjabi,
-            AnandSahibPunjabi,RehraasSahibPunjabi,KirtanSohilaPunjabi,BarahmaahaPunjabi;
+    Button JapjiSahibPunjabi,ShabadHazaarePunjabi,JaapSahibPunjabi,TavParsaadSavaiyeePunjabi,
+            AnandSahibPunjabi,RehraasSahibPunjabi,KirtanSohilaPunjabi,BarahmaahaPunjabi
+            ,JapjiSahibMorning6AM,JaapSahibMorning615AM,TavPrasadSavaiyeMorning645AM,
+    AnandSahibMorning7AM,RehraasSahibEvening630PM,SohilaEvening10PM,JapjiSahibEnglish,
+            AnandSahibEnglish,RehraasSahibEnglish,KirtanSohilaEnglish,BarahmaahaEnglish;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gurbani);
 
-        alarmButton = findViewById(R.id.alarmButton);
-        alarmButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
-                startActivity(i);
 
 
-            }
-        });
+
 
         JapjiSahibPunjabi = findViewById(R.id.JapjiSahibPunjabi);
         JapjiSahibPunjabi.setOnClickListener(new View.OnClickListener() {
@@ -123,5 +119,128 @@ public class Gurbani extends AppCompatActivity {
 
             }
         });
+
+        JapjiSahibEnglish = findViewById(R.id.JapjiSahibEnglish);
+        JapjiSahibEnglish.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(Gurbani.this, com.sikhismknowledge.sikhismknowledge.gurbani.JapjiSahibEnglish.class);
+                startActivity(i);
+
+
+            }
+        });
+
+        AnandSahibEnglish = findViewById(R.id.AnandSahibEnglish);
+        AnandSahibEnglish.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(Gurbani.this, com.sikhismknowledge.sikhismknowledge.gurbani.AnandSahibEnglish.class);
+                startActivity(i);
+
+
+            }
+        });
+
+        RehraasSahibEnglish = findViewById(R.id.RehraasSahibEnglish);
+        RehraasSahibEnglish.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(Gurbani.this, com.sikhismknowledge.sikhismknowledge.gurbani.RehraasSahibEnglish.class);
+                startActivity(i);
+
+
+            }
+        });
+
+        KirtanSohilaEnglish = findViewById(R.id.KirtanSohilaEnglish);
+        KirtanSohilaEnglish.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(Gurbani.this, com.sikhismknowledge.sikhismknowledge.gurbani.KirtanSohilaEnglish.class);
+                startActivity(i);
+
+
+            }
+        });
+
+        BarahmaahaEnglish = findViewById(R.id.BarahmaahaEnglish);
+        BarahmaahaEnglish.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(Gurbani.this, com.sikhismknowledge.sikhismknowledge.gurbani.BarahmaahaEnglish.class);
+                startActivity(i);
+
+
+            }
+        });
+
+        JapjiSahibMorning6AM = findViewById(R.id.JapjiSahibMorning6AM);
+        JapjiSahibMorning6AM.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(Gurbani.this, com.sikhismknowledge.sikhismknowledge.gurbani.JapjiSahibMorning6AM.class);
+                startActivity(i);
+
+
+            }
+        });
+
+
+        JaapSahibMorning615AM = findViewById(R.id.JaapSahibMorning615AM);
+        JaapSahibMorning615AM.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(Gurbani.this, com.sikhismknowledge.sikhismknowledge.gurbani.JaapSahibMorning615AM.class);
+                startActivity(i);
+
+
+            }
+        });
+
+        TavPrasadSavaiyeMorning645AM = findViewById(R.id.TavPrasadSavaiyeMorning645AM);
+        TavPrasadSavaiyeMorning645AM.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(Gurbani.this, com.sikhismknowledge.sikhismknowledge.gurbani.TavPrasadSavaiyeMorning645AM.class);
+                startActivity(i);
+
+
+            }
+        });
+
+        AnandSahibMorning7AM = findViewById(R.id.AnandSahibMorning7AM);
+        AnandSahibMorning7AM.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(Gurbani.this, com.sikhismknowledge.sikhismknowledge.gurbani.AnandSahibMorning7AM.class);
+                startActivity(i);
+
+
+            }
+        });
+
+        RehraasSahibEvening630PM = findViewById(R.id.RehraasSahibEvening630PM);
+        RehraasSahibEvening630PM.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(Gurbani.this, com.sikhismknowledge.sikhismknowledge.gurbani.RehraasSahibEvening630PM.class);
+                startActivity(i);
+
+
+            }
+        });
+
+        SohilaEvening10PM = findViewById(R.id.SohilaEvening10PM);
+        SohilaEvening10PM.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(Gurbani.this, com.sikhismknowledge.sikhismknowledge.gurbani.SohilaEvening10PM.class);
+                startActivity(i);
+
+
+            }
+        });
+
     }
 }

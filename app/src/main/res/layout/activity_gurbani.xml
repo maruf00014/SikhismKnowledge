@@ -15,16 +15,65 @@
     android:orientation="vertical">
 
     <Button
-        android:id="@+id/alarmButton"
-        android:layout_width="wrap_content"
+        android:id="@+id/JapjiSahibMorning6AM"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="set alarm"
-        android:background="@color/colorPrimary"
-        android:textColor="@android:color/white"
         android:textStyle="bold"
-        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:text="Japji Sahib - Morning 6 AM"
         android:layout_marginBottom="8dp"/>
 
+    <Button
+        android:id="@+id/JaapSahibMorning615AM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:text="Jaap Sahib - Morning 6.15 AM"
+        android:layout_marginBottom="8dp"/>
+
+
+    <Button
+        android:id="@+id/TavPrasadSavaiyeMorning645AM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:text="Tav Prasad Savaiye - Morning 6.45 AM"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/AnandSahibMorning7AM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:text="Anand Sahib - Morning 7 AM"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/RehraasSahibEvening630PM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:text="Rehraas Sahib - Evening 6.30 PM"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/SohilaEvening10PM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:text="Sohila - Evening 10 PM"
+        android:layout_marginBottom="8dp"/>
     <Button
         android:id="@+id/JapjiSahibPunjabi"
         android:layout_width="match_parent"
@@ -32,7 +81,16 @@
         android:textStyle="bold"
         android:textColor="@android:color/white"
         android:background="@color/colorPrimary"
-        android:text="Japji Sahib – Punjabi and English"
+        android:text="Japji Sahib – Punjabi"
+        android:layout_marginBottom="8dp"/>
+    <Button
+        android:id="@+id/JapjiSahibEnglish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:text="Japji Sahib – English"
         android:layout_marginBottom="8dp"/>
 
     <Button
@@ -71,7 +129,16 @@
         android:textStyle="bold"
         android:textColor="@android:color/white"
         android:background="@color/colorPrimary"
-        android:text="Anand Sahib - Punjabi and English"
+        android:text="Anand Sahib - Punjabi"
+        android:layout_marginBottom="8dp"/>
+    <Button
+        android:id="@+id/AnandSahibEnglish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:text="Anand Sahib - English"
         android:layout_marginBottom="8dp"/>
 
     <Button
@@ -81,7 +148,17 @@
         android:textStyle="bold"
         android:textColor="@android:color/white"
         android:background="@color/colorPrimary"
-        android:text="Rehraas Sahib - Punjabi and English"
+        android:text="Rehraas Sahib - Punjabi"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/RehraasSahibEnglish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:text="Rehraas Sahib - English"
         android:layout_marginBottom="8dp"/>
 
     <Button
@@ -91,7 +168,17 @@
         android:textStyle="bold"
         android:textColor="@android:color/white"
         android:background="@color/colorPrimary"
-        android:text="Kirtan Sohila - Punjabi and English"
+        android:text="Kirtan Sohila - Punjabi"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/KirtanSohilaEnglish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:text="Kirtan Sohila - English"
         android:layout_marginBottom="8dp"/>
 
     <Button
@@ -101,7 +188,17 @@
         android:textStyle="bold"
         android:textColor="@android:color/white"
         android:background="@color/colorPrimary"
-        android:text="Barahmaaha – Punjabi and English"
+        android:text="Barahmaaha – Punjabi"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/BarahmaahaEnglish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:text="Barahmaaha – English"
         android:layout_marginBottom="8dp"/>
 
 </LinearLayout>

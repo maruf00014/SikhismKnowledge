@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 import com.sikhismknowledge.sikhismknowledge.data.DbHelper;
@@ -60,6 +61,9 @@ public class QuizActivity extends AppCompatActivity {
                         {
                             score++;
                             Log.d("score", "Your score"+score);
+                            Toast.makeText(getApplicationContext(),"Correct!",Toast.LENGTH_SHORT).show();
+                        }else {
+                            Toast.makeText(getApplicationContext(),"Wrong!",Toast.LENGTH_SHORT).show();
                         }
                         if(qid<5){
                             currentQ=quesList.get(qid);

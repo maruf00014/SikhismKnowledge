@@ -2,14 +2,20 @@ package com.sikhismknowledge.sikhismknowledge.gurbani;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.TextView;
 
 import com.sikhismknowledge.sikhismknowledge.R;
 
 public class BarahmaahaPunjabi extends AppCompatActivity {
 
+    TextView textView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_barahmaaha_punjabi);
+        setContentView(R.layout.text_view);
+
+        textView = findViewById(R.id.text_view);
+        textView.setText(R.string.BarahmaahaPunjabi);
     }
 }

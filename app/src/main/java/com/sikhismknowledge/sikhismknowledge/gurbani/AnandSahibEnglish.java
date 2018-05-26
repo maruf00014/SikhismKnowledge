@@ -1,12 +1,16 @@
 package com.sikhismknowledge.sikhismknowledge.gurbani;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 import com.sikhismknowledge.sikhismknowledge.R;
 
-public class ShabadHazaarePunjabi extends AppCompatActivity {
+/**
+ * Created by Maruf on 20-May-18.
+ */
+
+public class AnandSahibEnglish extends AppCompatActivity {
 
     TextView textView;
 
@@ -16,6 +20,6 @@ public class ShabadHazaarePunjabi extends AppCompatActivity {
         setContentView(R.layout.text_view);
 
         textView = findViewById(R.id.text_view);
-        textView.setText(R.string.ShabadHazaarePunjabi);
+        textView.setText(R.string.AnandSahibEnglish);
     }
 }
